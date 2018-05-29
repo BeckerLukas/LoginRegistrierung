@@ -27,8 +27,8 @@
             android:name=".RegActivity"
             android:label="@string/title_activity_reg" />
         <activity
-            android:name=".Story"
-            android:label="@string/title_activity_story"></activity>
+            android:name=".Profil"
+            android:label="@string/title_activity_story" />
     </application>
 
 </manifest>
