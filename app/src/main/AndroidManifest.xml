@@ -29,7 +29,8 @@
         <activity
             android:name=".Profil"
             android:label="@string/title_activity_story" />
-        <activity android:name=".Benachrichtigung"></activity>
+        <activity android:name=".Benachrichtigung" />
+        <activity android:name=".Newsfeed"></activity>
     </application>
 
 </manifest>
