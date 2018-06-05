@@ -11,8 +11,8 @@
         android:id="@+id/Beschreibung"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
         android:text="@string/username"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +38,7 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="371dp"
-        android:layout_height="354dp"
+        android:layout_height="308dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -73,6 +73,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Abonnenten"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -84,6 +85,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="abonniert"
         android:inputType="number"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="228dp" />
@@ -93,6 +95,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Beiträge"
         android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/editText2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -101,17 +104,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="16dp"
         android:text="@string/beschreibung_nutzer"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="55dp" />
+        tools:layout_editor_absoluteY="88dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="56dp"
         android:text="bearbeiten"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -122,5 +125,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="73dp"
+        android:layout_height="61dp"
+        app:srcCompat="@android:drawable/picture_frame"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 </android.support.constraint.ConstraintLayout>
