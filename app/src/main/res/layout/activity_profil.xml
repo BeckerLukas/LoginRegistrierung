@@ -35,70 +35,37 @@
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/navigation" />
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="371dp"
-        android:layout_height="308dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal" />
-
-    </TableLayout>
-
     <EditText
         android:id="@+id/editText"
-        android:layout_width="70dp"
+        android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Abonnenten"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toEndOf="@+id/editText2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="70dp"
+        android:layout_width="86dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="abonniert"
         android:inputType="number"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="228dp" />
+        tools:layout_editor_absoluteX="194dp" />
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="70dp"
+        android:layout_width="77dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Beiträge"
         android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="117dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -128,10 +95,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="73dp"
-        android:layout_height="61dp"
+        android:layout_width="91dp"
+        android:layout_height="74dp"
         app:srcCompat="@android:drawable/picture_frame"
-        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="0dp" />
+
+    <GridView
+        android:layout_width="367dp"
+        android:layout_height="332dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:numColumns="3"/>
 
 </android.support.constraint.ConstraintLayout>
