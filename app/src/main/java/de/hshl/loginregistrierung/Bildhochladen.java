@@ -3,6 +3,10 @@ package de.hshl.loginregistrierung;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -64,4 +68,5 @@ public class Bildhochladen extends AppCompatActivity {
 
         super.onActivityResult(requestCode, resultCode, data);
     }
+
 }
