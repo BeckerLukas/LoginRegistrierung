@@ -41,7 +41,7 @@
             android:name=".TakePicture"
             android:exported="true" />
         <activity android:name=".Liste" />
-        <activity android:name=".Bildbearbeiten"></activity>
+        <activity android:name=".Bildhochladen"></activity>
     </application>
 
 </manifest>

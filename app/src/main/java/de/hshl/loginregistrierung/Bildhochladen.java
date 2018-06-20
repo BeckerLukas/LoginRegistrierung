@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-public class Bildbearbeiten extends AppCompatActivity {
+public class Bildhochladen extends AppCompatActivity {
 
     ImageView iv;
     Button btn;
@@ -27,7 +27,7 @@ public class Bildbearbeiten extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bildbearbeiten);
+        setContentView(R.layout.activity_hochladen);
 
         iv = (ImageView) findViewById(R.id.imageView);
         btn = (Button) findViewById(R.id.button);
