@@ -13,7 +13,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class TakePicture extends AppCompatActivity {
-
     static final int REQUEST_IMAGE_CAPTURE = 1;
     ImageView showpicImageView;
 
