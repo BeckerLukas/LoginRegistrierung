@@ -6,7 +6,11 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,15 +29,23 @@
         </activity>
         <activity
             android:name=".RegActivity"
-            android:label="@string/title_activity_reg"
-            />
+            android:label="@string/title_activity_reg" />
         <activity
             android:name=".Profil"
             android:label="@string/title_activity_profil" />
         <activity android:name=".Benachrichtigung" />
         <activity android:name=".Newsfeed" />
-        <activity android:name=".TakePicture"
-            android:exported="true"></activity>
+        <activity
+            android:name=".TakePicture"
+            android:exported="true" />
+        <activity
+            android:name=".BildAnzeigenActivity"
+            android:label="@string/title_activity_bild_anzeigen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BildAnzeigeActivity"
+            android:label="@string/title_activity_bild_anzeige"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
