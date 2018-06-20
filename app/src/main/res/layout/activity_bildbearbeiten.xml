@@ -42,4 +42,10 @@
         android:max="255"
         android:progress="255"
         android:thumbTint="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hochladen" />
 </LinearLayout>

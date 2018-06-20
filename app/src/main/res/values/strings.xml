@@ -34,4 +34,6 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_bild_anzeige">BildAnzeigeActivity</string>
     <string name="Bildbearbeitung" />
+    <string name="hochladen">hochladen</string>
+    <string name="bildbearbeiten">bearbeiten</string>
 </resources>
