@@ -1,5 +1,6 @@
 package de.hshl.loginregistrierung;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -10,8 +11,9 @@ import android.widget.TextView;
 public class Profil extends AppCompatActivity {
 
     private TextView mTextMessage;
+    BottomNavigationView navigation;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -22,9 +24,13 @@ public class Profil extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText("Kamera");
+                    Intent photo = new Intent(Profil.this, TakePicture.class);
+                    startActivity(photo);
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
+                    Intent feed = new Intent(Profil.this, Newsfeed.class);
+                    startActivity(feed);
                     return true;
 
             }
@@ -38,7 +44,7 @@ public class Profil extends AppCompatActivity {
         setContentView(R.layout.activity_profil);
 
         mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
