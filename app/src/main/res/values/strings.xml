@@ -33,4 +33,5 @@
     <string name="title_activity_bild_anzeigen">BildAnzeigenActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_bild_anzeige">BildAnzeigeActivity</string>
+    <string name="Bildbearbeitung" />
 </resources>
