@@ -42,7 +42,8 @@
             android:exported="true" />
         <activity android:name=".Liste" />
         <activity android:name=".Bildhochladen" />
-        <activity android:name=".Bildbearbeiten"></activity>
+        <activity android:name=".Bildbearbeiten" />
+        <activity android:name=".ProfilBearbeitenActivity"></activity>
     </application>
 
 </manifest>
