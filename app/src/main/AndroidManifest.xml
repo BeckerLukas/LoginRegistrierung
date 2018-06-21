@@ -11,6 +11,8 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -38,14 +40,9 @@
         <activity
             android:name=".TakePicture"
             android:exported="true" />
-        <activity
-            android:name=".BildAnzeigenActivity"
-            android:label="@string/title_activity_bild_anzeigen"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".BildAnzeigeActivity"
-            android:label="@string/title_activity_bild_anzeige"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Liste" />
+        <activity android:name=".Bildhochladen" />
+        <activity android:name=".Bildbearbeiten"></activity>
     </application>
 
 </manifest>
