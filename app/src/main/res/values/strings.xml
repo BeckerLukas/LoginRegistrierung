@@ -36,6 +36,11 @@
     <string name="Bildbearbeitung" />
     <string name="hochladen">hochladen</string>
     <string name="bildbearbeiten">bearbeiten</string>
+<<<<<<< Updated upstream
     <string name="takepicture">Foto machen</string>
     <string name="BildausAufnahme" />
+=======
+    <string name="profil_bearbeiten">Profil bearbeiten</string>
+    <string name="Änderungen_übernehmen">Änderungen übernehmen</string>
+>>>>>>> Stashed changes
 </resources>
