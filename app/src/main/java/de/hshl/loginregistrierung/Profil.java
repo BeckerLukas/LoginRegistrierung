@@ -13,39 +13,38 @@ public class Profil extends AppCompatActivity {
     private TextView mTextMessage;
     BottomNavigationView navigation;
 
-    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText("Kamera");
-                    Intent photo = new Intent(Profil.this, TakePicture.class);
-                    startActivity(photo);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    Intent feed = new Intent(Profil.this, Newsfeed.class);
-                    startActivity(feed);
-                    return true;
-
-            }
-            return false;
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
+        BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.navigation);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.navigation_home:
+                        break;
+                    case R.id.navigation_dashboard:
+                        Intent intent1 = new Intent(Profil.this, TakePicture.class);
+                        startActivity(intent1);
+                        break;
+                    case R.id.navigation_notifications:
+                        Intent intent2 = new Intent(Profil.this, Newsfeed.class);
+                        startActivity(intent2);
+                        break;
+
+
+            }
+                return false;
+            }
+        });
+
         mTextMessage = (TextView) findViewById(R.id.message);
-        navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
 
     }
 
