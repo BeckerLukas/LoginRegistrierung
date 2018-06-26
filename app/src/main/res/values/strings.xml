@@ -23,13 +23,9 @@
     <string name="username">Username</string>
     <string name="beschreibung_nutzer">Beschreibung</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
-    <string name="large_text">
-
-
-
-    </string>
+    <string name="large_text"></string>
     <string name="action_settings">Settings</string>
-    <string name="title_dashboard" />
+    <string name="title_dashboard">Kamera</string>
     <string name="title_activity_bild_anzeigen">BildAnzeigenActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_bild_anzeige">BildAnzeigeActivity</string>

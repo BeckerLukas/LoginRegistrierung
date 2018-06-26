@@ -41,6 +41,7 @@
                     android:layout_height="match_parent">
 
                     <android.support.design.widget.TextInputEditText
+                        android:id="@+id/pass"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Passwort"
@@ -80,6 +81,7 @@
                     android:layout_height="match_parent">
 
                     <android.support.design.widget.TextInputEditText
+                        android:id="@+id/nickname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Nutzername" />
@@ -95,7 +97,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Registrieren"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="OnReg"/>
 
         </LinearLayout>
     </ScrollView>
