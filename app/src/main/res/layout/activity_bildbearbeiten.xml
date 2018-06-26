@@ -8,6 +8,12 @@
     android:orientation="vertical"
     tools:context=".Bildbearbeiten">
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bildbearbeitung" />
+
     <ImageView
         android:id="@+id/iv"
         android:layout_width="263dp"
@@ -28,6 +34,7 @@
     <SeekBar
         android:id="@+id/greenbar"
         android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.SeekBar"
         android:layout_height="40dp"
         android:max="255"
         android:progress="255"
@@ -36,6 +43,7 @@
         />
 
     <SeekBar
+        style="@style/Widget.AppCompat.SeekBar"
         android:id="@+id/bluebar"
         android:layout_width="match_parent"
         android:layout_height="40dp"

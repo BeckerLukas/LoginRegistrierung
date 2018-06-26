@@ -44,9 +44,10 @@ public class MyReceiver extends BroadcastReceiver {
             NotificationManager notificationManager
                     = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
             notificationManager.createNotificationChannel(notificationChannel);
-            notificationManager.notify( id: 42, notification);
 
-            Log.i(tag:"MyReceiver", msq:"Received de.hshl.CUSTOM_BROADCAST");
+          //  notificationManager.notify( id: 42, notification);
+
+           // Log.i(tag:"MyReceiver", msq:"Received de.hshl.CUSTOM_BROADCAST");
 
         }
 
