@@ -117,9 +117,10 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String result) {
         alertDialog.setMessage(result);
         alertDialog.show();
-        context.startActivity(new Intent(context, Profil.class));
+        if (result.equals("login success")) {
+            context.startActivity(new Intent(context, Profil.class));
+        }
     }
-
     @Override
     protected void onProgressUpdate(Void... values) {
         super.onProgressUpdate(values);
