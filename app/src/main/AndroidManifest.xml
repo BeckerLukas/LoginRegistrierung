@@ -45,7 +45,8 @@
         <activity android:name=".Bildhochladen" />
         <activity android:name=".Bildbearbeiten" />
         <activity android:name=".Benachrichtigungen" />
-        <activity android:name=".Bildanzeigen"></activity>
+        <activity android:name=".Bildanzeigen" />
+        <activity android:name=".Kommentar_schreiben"></activity>
     </application>
 
 </manifest>

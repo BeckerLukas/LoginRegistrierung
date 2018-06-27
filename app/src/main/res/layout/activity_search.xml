@@ -19,7 +19,7 @@
         android:layout_height="59dp"
         android:gravity="top"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="28dp" />
 
 </android.support.constraint.ConstraintLayout>

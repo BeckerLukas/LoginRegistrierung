@@ -38,4 +38,11 @@
 
     <string name="profil_bearbeiten">Profil bearbeiten</string>
     <string name="Änderungen_übernehmen">Änderungen übernehmen</string>
+    <string name="schreibe_kommentar">Schreibe Kommentar.. </string>
+    <string name="send_comment" />
+    <string name="einzelbild" />
+    <string name="nutzername">Nutzername</string>
+    <string name="likes">likes:</string>
+    <string name="comment">Kommentare: </string>
+    <string name="kommentieren" />
 </resources>
