@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 public class TakePicture extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
-    ImageView showpicImageView;
+    ImageView showpic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,30 +22,21 @@ public class TakePicture extends AppCompatActivity {
         setContentView(R.layout.activity_take_picture);
 
         Button fotobutton = (Button) findViewById(R.id.fotobutton);
-        showpicImageView= (ImageView) findViewById(R.id.showpic);
+        showpic = (ImageView) findViewById(R.id.showpic);
 
-        //Disable the button if the user has no camera
-        if(!hasCamera())
-            fotobutton.setEnabled(false);
+        fotobutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent, 0);
+            }
+        });
     }
-       //Check if the user has camera
-        private boolean hasCamera() {
-    return getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY);
-        }
-    //launch camera
-    public void launchCamera(View view){
-       Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-       //Mache ein Foto und gib sie an onActivityResult weiter
-        startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
-    }
-    //If you want to return the image taken
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
-           //Get the photo
-           Bundle extras = data.getExtras();
-           Bitmap photo = (Bitmap) extras.get("data");
-           showpicImageView.setImageBitmap(photo);
+        @Override
+        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+            super.onActivityResult(requestCode, resultCode, data);
+            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+            showpic.setImageBitmap(bitmap);
         }
     }
-}
