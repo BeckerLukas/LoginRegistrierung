@@ -45,4 +45,5 @@
     <string name="likes">likes:</string>
     <string name="comment">Kommentare: </string>
     <string name="kommentieren" />
+    <string name="bild_auswählen">Galerie öffnen </string>
 </resources>

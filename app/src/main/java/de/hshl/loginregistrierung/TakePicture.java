@@ -50,7 +50,12 @@ public class TakePicture extends AppCompatActivity {
                 startActivityForResult(intent1, requcode);
             }
         });
+        Bitmap bitmap = (Bitmap)this.getIntent().getParcelableExtra("Bitmap");
+        ImageView viewBitmap = (ImageView)findViewById(R.id.showpic);
+        viewBitmap.setImageBitmap(bitmap);
+
     }
+
         @Override
         protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             super.onActivityResult(requestCode, resultCode, data);
@@ -83,7 +88,6 @@ public class TakePicture extends AppCompatActivity {
     Uri bilduri;
     Bitmap bm;
     InputStream is;
-
 
 
 
