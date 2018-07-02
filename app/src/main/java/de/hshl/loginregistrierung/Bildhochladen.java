@@ -115,7 +115,7 @@ public class Bildhochladen extends AppCompatActivity {
 
         }
     };
-    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+
 
     private void setColorFilter(ImageView imageView) {
 
