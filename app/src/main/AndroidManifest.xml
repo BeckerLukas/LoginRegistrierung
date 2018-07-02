@@ -7,12 +7,12 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
 
     <application
         android:allowBackup="true"
@@ -30,23 +30,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegActivity"
-            android:label="@string/title_activity_reg" />
-        <activity
-            android:name=".Profil"
-            android:label="@string/title_activity_profil" />
+        <activity android:name=".RegActivity" android:label="@string/title_activity_reg" />
+        <activity android:name=".Profil" android:label="@string/title_activity_profil" />
         <activity android:name=".Benachrichtigung" />
         <activity android:name=".Newsfeed" />
-        <activity
-            android:name=".TakePicture"
-            android:exported="true" />
+        <activity android:name=".TakePicture" android:exported="true" />
         <activity android:name=".Liste" />
         <activity android:name=".Bildhochladen" />
         <activity android:name=".Bildbearbeiten" />
         <activity android:name=".Benachrichtigungen" />
         <activity android:name=".Bildanzeigen" />
         <activity android:name=".Kommentar_schreiben"></activity>
+        <activity android:name=".search"/>
     </application>
 
 </manifest>

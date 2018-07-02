@@ -6,20 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".search">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="132dp"
-        android:layout_height="43dp"
-        android:text="@android:string/search_go"
-        tools:layout_editor_absoluteY="10dp" />
-
-    <SearchView
+    <Button
         android:id="@+id/searchView2"
-        android:layout_width="52dp"
-        android:layout_height="59dp"
-        android:gravity="top"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="28dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="search"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ListView
+        android:id="@+id/lvuser"
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="58dp" />
 
 </android.support.constraint.ConstraintLayout>

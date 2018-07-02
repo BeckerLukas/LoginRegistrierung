@@ -3,6 +3,7 @@ package de.hshl.loginregistrierung;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -51,6 +52,8 @@ public class RegActivity extends AppCompatActivity {
         passwort =(EditText)findViewById(R.id.pass);
         nickname =(EditText)findViewById(R.id.nickname);
     }
+
+
     public void OnReg(View view){
         String str_email = email.getText().toString();
         String str_passwort = passwort.getText().toString();

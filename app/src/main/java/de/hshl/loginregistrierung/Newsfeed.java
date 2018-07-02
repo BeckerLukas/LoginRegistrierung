@@ -9,11 +9,14 @@ import android.view.MenuItem;
 
 public class Newsfeed extends AppCompatActivity {
     BottomNavigationView navigation;
+    String userid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newsfeed);
+        Intent intent=getIntent();
+        userid = intent.getStringExtra("userid");
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -23,10 +26,12 @@ public class Newsfeed extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.navigation_home:
                         Intent intent1 = new Intent(Newsfeed.this, Profil.class);
+                        intent1.putExtra("userid", userid);
                         startActivity(intent1);
                         break;
                     case R.id.navigation_dashboard:
                         Intent intent2 = new Intent(Newsfeed.this, TakePicture.class);
+                        intent2.putExtra("userid", userid);
                         startActivity(intent2);
                         break;
                     case R.id.navigation_notifications:
