@@ -83,7 +83,6 @@ public class Profil extends AppCompatActivity {
         username =(TextView)findViewById(R.id.username2);
         beschreibung =(TextView)findViewById(R.id.beschreibung);
         profilbild = (ImageView)findViewById(R.id.imageView);
-        Toast.makeText(this, "Hallo: "+ profilid, Toast.LENGTH_LONG).show();
         visible();
         bearbeiten();
         JSONTask jsonTask = new JSONTask();
