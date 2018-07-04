@@ -52,13 +52,10 @@ import static android.Manifest.permission.READ_CONTACTS;
 public class LoginActivity extends AppCompatActivity  implements  View.OnClickListener {
 
 
-    private EditText mPasswordView;
     EditText usernameEt, passwordEt;
-    private View mProgressView;
-    private View mLoginFormView;
     public Button btn1, btn2;
 
-    public static final String login_url = "http://192.168.188.24/Instalite/login.php";
+    public static final String login_url = "http://192.168.0.109/Instalite/login.php";
     public static final String KEY_EMAIL="email";
     public static final String KEY_PASSWORD="password";
 
@@ -77,14 +74,7 @@ public class LoginActivity extends AppCompatActivity  implements  View.OnClickLi
 
 
         }
-        /*public void OnLogin(View view){
-        String username = usernameEt.getText().toString();
-        String password = passwordEt.getText().toString();
-        String type="login";
 
-        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(type, username, password);
-        } */
 
 
 
@@ -100,15 +90,6 @@ public class LoginActivity extends AppCompatActivity  implements  View.OnClickLi
     }
 
 
-    private boolean isEmailValid(String email) {
-        //TODO: Replace this with your own logic
-        return email.contains("@");
-    }
-
-    private boolean isPasswordValid(String password) {
-        //TODO: Replace this with your own logic
-        return password.length() > 4;
-    }
 
 
     @Override
@@ -128,7 +109,6 @@ public class LoginActivity extends AppCompatActivity  implements  View.OnClickLi
                             if(responsestatus){
                                 String userid =jsonObject.getString("userid");
                                 String profilid= jsonObject.getString("userid");
-                                Toast.makeText(LoginActivity.this,"Profilid:" + userid, Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(LoginActivity.this, Profil.class);
                                 intent.putExtra("userid", userid);
                                 intent.putExtra("profilid", profilid);

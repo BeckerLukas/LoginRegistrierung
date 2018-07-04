@@ -32,12 +32,10 @@
         </activity>
         <activity android:name=".RegActivity" android:label="@string/title_activity_reg" />
         <activity android:name=".Profil" android:label="@string/title_activity_profil" />
-        <activity android:name=".Benachrichtigung" />
         <activity android:name=".Newsfeed" />
         <activity android:name=".TakePicture" android:exported="true" />
         <activity android:name=".Liste" />
         <activity android:name=".Bildhochladen" />
-        <activity android:name=".Bildbearbeiten" />
         <activity android:name=".Benachrichtigungen" />
         <activity android:name=".Bildanzeigen" />
         <activity android:name=".Kommentar_schreiben"></activity>

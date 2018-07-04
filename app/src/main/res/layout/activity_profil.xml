@@ -8,7 +8,7 @@
     tools:context=".Profil">
 
     <TextView
-        android:id="@+id/Beschreibung"
+        android:id="@+id/username2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="280dp"
@@ -40,7 +40,7 @@
     </android.support.design.widget.BottomNavigationView>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/beschreibung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Beschreibung" />
+        app:layout_constraintTop_toBottomOf="@+id/username2" />
 
     <Button
         android:id="@+id/button"
@@ -99,6 +99,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <GridView
+        android:id="@+id/lvbilder"
         android:layout_width="0dp"
         android:layout_height="332dp"
         android:layout_marginBottom="8dp"

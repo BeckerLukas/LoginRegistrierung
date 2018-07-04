@@ -29,13 +29,13 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String upload_url = "http://192.168.188.24/Instalite/upload.php";
-        String register_url = "http://192.168.188.24/Instalite/registrierung.php";
-        String abonnieren_url = "http://192.168.188.24/Instalite/abonnieren.php";
-        String deabonnieren_url = "http://192.168.188.24/Instalite/deabonnieren.php";
+        String upload_url = "http://192.168.0.109/Instalite/upload.php";
+        String register_url = "http://192.168.0.109/Instalite/registrierung.php";
+        String abonnieren_url = "http://192.168.0.109/Instalite/abonnieren.php";
+        String deabonnieren_url = "http://192.168.0.109/deabonnieren.php";
         if(type.equals("upload")){
             try {
-                userid2 =params[3];
+                userid2 = params[3];
                 String beschreibung = params[1];
                 String encoded_string = params[2];
                 String userid = params[3];
@@ -197,6 +197,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
             }else if(result.equals("Upload success")){
                 Intent intent = new Intent(context, Profil.class);
                 intent.putExtra("userid", userid2);
+                intent.putExtra("profilid", userid2);
                 context.startActivity(intent);
             }
         }
